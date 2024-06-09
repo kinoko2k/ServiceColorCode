@@ -25,7 +25,7 @@ function handleKeyPress(event) {
         for (const item of contentItems) {
             const tag = item.getAttribute('data-tag').toLowerCase();
             if (tag === searchTerm) {
-                const itemPosition = item.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
+                const itemPosition = item.getBoundingClientRect().top + window.scrollY - headerHeight - 20;
                 window.scrollTo({
                     top: itemPosition,
                     behavior: 'smooth'
