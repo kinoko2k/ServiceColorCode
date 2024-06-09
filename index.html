@@ -13,7 +13,10 @@
                 <img src="https://avatars.githubusercontent.com/u/65443692?s=48&v=4" alt="アイコン">
             </div>
             <div class="search-bar">
-                <input type="text" id="searchInput" placeholder="search" onkeypress="handleKeyPress(event)">
+                <input type="text" id="searchInput" placeholder="けんさくらん" onkeypress="handleKeyPress(event)">
+                <a href="https://github.com/kinoko2k/ServiceColorCode" target="_blank">
+                    <img src="img/GitHub.png" alt="GitHub" class="github-icon">
+                </a>
             </div>
         </div>
     </header>
@@ -38,7 +41,7 @@
                 </div>
                 <div class="item-details">
                     <h1>X</h1>
-                    <p class="description">これはサービスの説明です。</p>
+                    <p class="description">X</p>
                 </div>
                 <div class="color-code-wrapper">
                     <p class="color-code">#0F1419</p>
@@ -110,6 +113,58 @@
                     <button class="copy-btn" onclick="copyColorCode('#4267B2')">Copy</button>
                 </div>
             </div>
+            <div class="content-item" id="Apple" data-tag="apple" style="background: linear-gradient(45deg, #000000, #555555);">
+                <div class="item-icon">
+                    <img src="img/apple.svg" alt="service-icon">
+                </div>
+                <div class="item-details">
+                    <h1>Apple</h1>
+                    <p class="description">これはAppleの説明です。</p>
+                </div>
+                <div class="color-code-wrapper">
+                    <p class="color-code">#4267B2</p>
+                    <button class="copy-btn" onclick="copyColorCode('#4267B2')">Copy</button>
+                </div>
+            </div>
+            <div class="content-item" id="Android" data-tag="android" style="background: linear-gradient(45deg, #78C257, #78C257);">
+                <div class="item-icon">
+                    <img src="img/android.svg" alt="service-icon">
+                </div>
+                <div class="item-details">
+                    <h1>Android</h1>
+                    <p class="description">これはAndroidの説明です。</p>
+                </div>
+                <div class="color-code-wrapper">
+                    <p class="color-code">#78C257</p>
+                    <button class="copy-btn" onclick="copyColorCode('#78C257')">Copy</button>
+                </div>
+            </div>
+            <div class="content-item" id="YouTube" data-tag="youtube" style="background: linear-gradient(45deg, #FF0000, #282828);">
+                <div class="item-icon">
+                    <img src="img/YouTube.png" alt="service-icon">
+                </div>
+                <div class="item-details">
+                    <h1>YouTube</h1>
+                    <p class="description">これはYouTubeの説明です。</p>
+                </div>
+                <div class="color-code-wrapper">
+                    <p class="color-code">#FF0000</p>
+                    <button class="copy-btn" onclick="copyColorCode('#FF0000')">Copy</button>
+                </div>
+            </div>
+            <div class="content-item" id="Spotify" data-tag="spotify" style="background: linear-gradient(45deg, #1DB954, #191414);">
+                <div class="item-icon">
+                    <img src="img/Spotify.png" alt="service-icon">
+                </div>
+                <div class="item-details">
+                    <h1>Spotify</h1>
+                    <p class="description">これはSpotifyの説明です。</p>
+                </div>
+                <div class="color-code-wrapper">
+                    <p class="color-code">#1DB954</p>
+                    <button class="copy-btn" onclick="copyColorCode('#1DB954')">Copy</button>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
@@ -118,9 +173,9 @@
     <script>
         function copyColorCode(code) {
             navigator.clipboard.writeText(code).then(function() {
-                alert("カラーコードがコピーされました: " + code);
+                alert("カラーコードがコピーされました。: " + code);
             }, function() {
-                alert("コピーに失敗しました");
+                alert("コピーに失敗しました。");
             });
         }
 
@@ -137,9 +192,51 @@
                     }
                 }
 
-                alert('該当するサービスが見つかりませんでした');
+                alert('該当するサービスが見つかりませんでした。');
             }
         }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Shift') {
+                const twitterItem = document.querySelector('#x');
+                if (twitterItem) {
+                    const twitterIcon = twitterItem.querySelector('.item-icon img');
+                    const twitterName = twitterItem.querySelector('.item-details h1');
+                    const twitterDescription = twitterItem.querySelector('.item-details .description');
+
+                    if (twitterIcon) {
+                        twitterIcon.src = 'img/Twitter.svg';
+                    }
+                    if (twitterName) {
+                        twitterName.textContent = 'Twitter';
+                    }
+                    if (twitterDescription) {
+                        twitterDescription.textContent = 'かわいそうな鳥';
+                    }
+                }
+            }
+        });
+
+        document.addEventListener('keyup', function(event) {
+            if (event.key === 'Shift') {
+                const twitterItem = document.querySelector('#x');
+                if (twitterItem) {
+                    const twitterIcon = twitterItem.querySelector('.item-icon img');
+                    const twitterName = twitterItem.querySelector('.item-details h1');
+                    const twitterDescription = twitterItem.querySelector('.item-details .description');
+
+                    if (twitterIcon) {
+                        twitterIcon.src = 'img/X.png';
+                    }
+                    if (twitterName) {
+                        twitterName.textContent = 'X';
+                    }
+                    if (twitterDescription) {
+                        twitterDescription.textContent = 'これはXの説明です。';
+                    }
+                }
+            }
+        });
     </script>
 </body>
 </html>

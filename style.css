@@ -7,7 +7,7 @@ body, html {
 }
 
 header {
-    background-color: #333;
+    background-color: #e49e61;
     color: white;
     padding: 10px 0;
 }
@@ -22,14 +22,36 @@ header {
 }
 
 .logo img {
-    height: 40px; /* アイコンの高さを調整 */
+    height: 40px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
 }
 
 .search-bar input {
     padding: 5px 10px;
     border: none;
     border-radius: 4px;
+    margin-right: 10px;
 }
+
+.search-bar a {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar .github-icon {
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.search-bar .github-icon:hover {
+    transform: scale(1.1);
+}
+
 
 .hero-image img {
     width: 100%;
@@ -45,10 +67,10 @@ header {
 
 .content-item {
     display: flex;
-    align-items: center; /* アイテムを垂直方向に中央揃え */
+    align-items: center;
     margin-bottom: 20px;
     padding: 20px;
-    border-radius: 15px; /* 枠を丸みを帯びさせる */
+    border-radius: 15px;
     color: white;
     border: 2px solid rgba(255, 255, 255, 0.4);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -61,12 +83,12 @@ header {
 }
 
 .item-icon img {
-    height: 50px; /* アイテムアイコンの高さを調整 */
+    height: 50px;
     margin-right: 20px;
 }
 
 .item-details {
-    flex-grow: 1; /* 残りのスペースを占有 */
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
@@ -84,14 +106,14 @@ header {
 .color-code-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* 右端に揃える */
-    margin-left: auto; /* 残りのスペースを占有 */
+    align-items: flex-end;
+    margin-left: auto;
 }
 
 .color-code {
     font-size: 12px;
     color: white;
-    margin: 0 0 5px 0; /* 下にマージンを追加 */
+    margin: 0 0 5px 0;
 }
 
 .copy-btn {
@@ -118,11 +140,12 @@ footer {
     margin-top: 20px;
 }
 
+footer p {
+    margin: 0;
+    white-space: pre-wrap;
+}
+
 footer a {
     color: white;
     text-decoration: none;
-}
-footer p {
-    margin: 0;
-    white-space: pre-wrap; /* 改行を反映させる */
 }
