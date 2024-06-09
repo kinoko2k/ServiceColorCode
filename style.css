@@ -99,6 +99,10 @@ header {
     font-size: 18px;
 }
 
+.item-details a {
+    color: white;
+}
+
 .item-details .description {
     margin: 5px 0;
     font-size: 14px;
