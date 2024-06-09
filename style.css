@@ -1,0 +1,128 @@
+/* style.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 40px; /* アイコンの高さを調整 */
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content-list {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.content-item {
+    display: flex;
+    align-items: center; /* アイテムを垂直方向に中央揃え */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px; /* 枠を丸みを帯びさせる */
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.item-icon img {
+    height: 50px; /* アイテムアイコンの高さを調整 */
+    margin-right: 20px;
+}
+
+.item-details {
+    flex-grow: 1; /* 残りのスペースを占有 */
+    display: flex;
+    flex-direction: column;
+}
+
+.item-details h1 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.item-details .description {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.color-code-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* 右端に揃える */
+    margin-left: auto; /* 残りのスペースを占有 */
+}
+
+.color-code {
+    font-size: 12px;
+    color: white;
+    margin: 0 0 5px 0; /* 下にマージンを追加 */
+}
+
+.copy-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffcccb;
+    color: #333;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.copy-btn:hover {
+    background-color: #ff9999;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer p {
+    margin: 0;
+    white-space: pre-wrap; /* 改行を反映させる */
+}
