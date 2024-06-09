@@ -20,11 +20,16 @@ function handleKeyPress(event) {
     if (event.key === 'Enter') {
         const searchTerm = document.getElementById('searchInput').value.toLowerCase();
         const contentItems = document.querySelectorAll('.content-item');
+        const headerHeight = document.querySelector('header').offsetHeight;
 
         for (const item of contentItems) {
             const tag = item.getAttribute('data-tag').toLowerCase();
             if (tag === searchTerm) {
-                item.scrollIntoView({ behavior: 'smooth' });
+                const itemPosition = item.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
+                window.scrollTo({
+                    top: itemPosition,
+                    behavior: 'smooth'
+                });
                 return;
             }
         }
@@ -32,6 +37,7 @@ function handleKeyPress(event) {
         alert('該当するサービスが見つかりませんでした。');
     }
 }
+
 
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Shift') {
