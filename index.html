@@ -28,7 +28,7 @@
                 </div>
                 <div class="item-details">
                     <h1>Discord</h1>
-                    <p class="description">これはDiscordです。</p>
+                    <p class="description">ゲーマー向けのボイスチャットやテキストチャットができるコミュニケーションサービスです。</p>
                 </div>
                 <div class="color-code-wrapper">
                     <p class="color-code">#7289da</p>
@@ -41,7 +41,7 @@
                 </div>
                 <div class="item-details">
                     <h1>X</h1>
-                    <p class="description">X</p>
+                    <p class="description">ユーザーが短いメッセージを投稿し、フォロワーと共有することができるSNSです。</p>
                 </div>
                 <div class="color-code-wrapper">
                     <p class="color-code">#0F1419</p>
@@ -54,7 +54,7 @@
                 </div>
                 <div class="item-details">
                     <h1>Instagram</h1>
-                    <p class="description">これはinstagramの説明です。</p>
+                    <p class="description">写真や動画を共有し、フォロワーと交流することができるビジュアル重視のSNSです。</p>
                 </div>
                 <div class="color-code-wrapper">
                     <p class="color-code">#0F1419</p>
@@ -67,7 +67,7 @@
                 </div>
                 <div class="item-details">
                     <h1>LINE</h1>
-                    <p class="description">これはLINEの説明です。</p>
+                    <p class="description">無料のメッセージングや通話ができる日本発のコミュニケーションアプリです。</p>
                 </div>
                 <div class="color-code-wrapper">
                     <p class="color-code">#06C755</p>
@@ -80,7 +80,7 @@
                 </div>
                 <div class="item-details">
                     <h1>Facebook</h1>
-                    <p class="description">これはfacebookの説明です。</p>
+                    <p class="description">ユーザーが友達や家族と交流し、写真やステータスを共有することができるソーシャルメディアサービスです。</p>
                 </div>
                 <div class="color-code-wrapper">
                     <p class="color-code">#4267B2</p>
@@ -93,7 +93,7 @@
                 </div>
                 <div class="item-details">
                     <h1>Amazon</h1>
-                    <p class="description">これはAmazonの説明です。</p>
+                    <p class="description">世界最大級のオンラインショッピングサイトで、様々な商品を購入することができます。</p>
                 </div>
                 <div class="color-code-wrapper">
                     <p class="color-code">#FF9900</p>
@@ -106,7 +106,7 @@
                 </div>
                 <div class="item-details">
                     <h1>Google</h1>
-                    <p class="description">これはGoogleの説明です。</p>
+                    <p class="description">検索エンジンをはじめ、GmailやGoogle Driveなど多くのインターネットサービスを提供するテクノロジー企業です。</p>
                 </div>
                 <div class="color-code-wrapper">
                     <p class="color-code">#4267B2</p>
@@ -119,7 +119,7 @@
                 </div>
                 <div class="item-details">
                     <h1>Apple</h1>
-                    <p class="description">これはAppleの説明です。</p>
+                    <p class="description">iOSやmacOSなどのソフトウェアを提供するテクノロジー企業です。</p>
                 </div>
                 <div class="color-code-wrapper">
                     <p class="color-code">#4267B2</p>
@@ -132,7 +132,7 @@
                 </div>
                 <div class="item-details">
                     <h1>Android</h1>
-                    <p class="description">これはAndroidの説明です。</p>
+                    <p class="description">Googleが開発したOSで、世界中の多くのスマートフォンに搭載されています。</p>
                 </div>
                 <div class="color-code-wrapper">
                     <p class="color-code">#78C257</p>
@@ -145,7 +145,7 @@
                 </div>
                 <div class="item-details">
                     <h1>YouTube</h1>
-                    <p class="description">これはYouTubeの説明です。</p>
+                    <p class="description">ユーザーが動画をアップロード、視聴することができる世界最大の動画共有プラットフォームです。</p>
                 </div>
                 <div class="color-code-wrapper">
                     <p class="color-code">#FF0000</p>
@@ -158,7 +158,7 @@
                 </div>
                 <div class="item-details">
                     <h1>Spotify</h1>
-                    <p class="description">これはSpotifyの説明です。</p>
+                    <p class="description">ストリーミング形式で音楽を聴くことができるデジタル音楽サービスです。</p>
                 </div>
                 <div class="color-code-wrapper">
                     <p class="color-code">#1DB954</p>
@@ -170,73 +170,6 @@
     <footer>
         <p>© <a href="https://github.com/kinoko2k/ServiceColorCode">ServiceColorCode</a><br><a href="https://github.com/kinoko2k/">Dev Kinoko_2K</a></p>
     </footer>
-    <script>
-        function copyColorCode(code) {
-            navigator.clipboard.writeText(code).then(function() {
-                alert("カラーコードがコピーされました。: " + code);
-            }, function() {
-                alert("コピーに失敗しました。");
-            });
-        }
-
-        function handleKeyPress(event) {
-            if (event.key === 'Enter') {
-                const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-                const contentItems = document.querySelectorAll('.content-item');
-
-                for (const item of contentItems) {
-                    const tag = item.getAttribute('data-tag').toLowerCase();
-                    if (tag === searchTerm) {
-                        item.scrollIntoView({ behavior: 'smooth' });
-                        return;
-                    }
-                }
-
-                alert('該当するサービスが見つかりませんでした。');
-            }
-        }
-
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Shift') {
-                const twitterItem = document.querySelector('#x');
-                if (twitterItem) {
-                    const twitterIcon = twitterItem.querySelector('.item-icon img');
-                    const twitterName = twitterItem.querySelector('.item-details h1');
-                    const twitterDescription = twitterItem.querySelector('.item-details .description');
-
-                    if (twitterIcon) {
-                        twitterIcon.src = 'img/Twitter.svg';
-                    }
-                    if (twitterName) {
-                        twitterName.textContent = 'Twitter';
-                    }
-                    if (twitterDescription) {
-                        twitterDescription.textContent = 'かわいそうな鳥';
-                    }
-                }
-            }
-        });
-
-        document.addEventListener('keyup', function(event) {
-            if (event.key === 'Shift') {
-                const twitterItem = document.querySelector('#x');
-                if (twitterItem) {
-                    const twitterIcon = twitterItem.querySelector('.item-icon img');
-                    const twitterName = twitterItem.querySelector('.item-details h1');
-                    const twitterDescription = twitterItem.querySelector('.item-details .description');
-
-                    if (twitterIcon) {
-                        twitterIcon.src = 'img/X.png';
-                    }
-                    if (twitterName) {
-                        twitterName.textContent = 'X';
-                    }
-                    if (twitterDescription) {
-                        twitterDescription.textContent = 'これはXの説明です。';
-                    }
-                }
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
