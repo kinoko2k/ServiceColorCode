@@ -46,18 +46,20 @@ header {
 .search-bar a {
     display: flex;
     align-items: center;
+    margin-left: 10px;
 }
 
-.search-bar .github-icon {
+.search-bar .github-icon,
+.search-bar .twitter-icon {
     height: 24px;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 
-.search-bar .github-icon:hover {
+.search-bar .github-icon:hover,
+.search-bar .twitter-icon:hover {
     transform: scale(1.1);
 }
-
 
 .hero-image img {
     width: 100%;
