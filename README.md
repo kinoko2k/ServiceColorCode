@@ -36,3 +36,5 @@ Code
 ```html
 style="background: linear-gradient(45deg, #xxxxxx, #xxxxxx)
 ```
+
+## シフトを押すといいことあるよ
