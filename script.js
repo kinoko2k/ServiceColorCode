@@ -1,9 +1,19 @@
 function copyColorCode(code) {
     navigator.clipboard.writeText(code).then(function() {
-        alert("カラーコードがコピーされました。: " + code);
+        showNotification("✅ コピーしました。");
     }, function() {
-        alert("コピーに失敗しました。");
+        showNotification("❌ コピーに失敗しました。");
     });
+}
+
+function showNotification(message) {
+    const notification = document.getElementById('notification');
+    notification.textContent = message;
+    notification.classList.add('show');
+
+    setTimeout(() => {
+        notification.classList.remove('show');
+    }, 3000);
 }
 
 function handleKeyPress(event) {

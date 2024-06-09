@@ -149,3 +149,20 @@ footer a {
     color: white;
     text-decoration: none;
 }
+
+.notification {
+    position: fixed;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: bottom 0.3s ease;
+}
+
+.notification.show {
+    bottom: 20px;
+}
