@@ -17,6 +17,12 @@
 |Android|
 |YouTube|
 |Spotify|
+|BeReal|
+|Telegram|
+|RiotGames|
+|League Of Legends|
+|VALORANT|
+|Microsoft|
 
 ## サービスの追加について
 ```html
