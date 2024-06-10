@@ -178,3 +178,39 @@ footer a {
 .notification.show {
     bottom: 20px;
 }
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search-bar input {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .search-bar a {
+        margin-left: 10;
+        margin-right: 10;
+    }
+
+    .content-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item-icon {
+        margin-bottom: 10px;
+    }
+
+    .color-code-wrapper {
+        align-items: flex-start;
+        margin-left: 0;
+    }
+}
