@@ -51,7 +51,7 @@ document.addEventListener('keydown', function(event) {
                 twitterIcon.src = 'img/Twitter.svg';
             }
             if (twitterName) {
-                twitterName.textContent = 'Twitter';
+                twitterName.innerHTML = '<a href="https://twitter.com/">Twitter</a>';
             }
             if (twitterDescription) {
                 twitterDescription.textContent = 'ユーザーが短いメッセージ（ツイート）を投稿し、フォロワーと共有するSNSです。';
@@ -72,7 +72,7 @@ document.addEventListener('keyup', function(event) {
                 twitterIcon.src = 'img/X.png';
             }
             if (twitterName) {
-                twitterName.textContent = 'X';
+                twitterName.innerHTML = '<a href="https://x.com/">X</a>';
             }
             if (twitterDescription) {
                 twitterDescription.textContent = 'ユーザーが短いメッセージを投稿し、フォロワーと共有することができるSNSです。';
