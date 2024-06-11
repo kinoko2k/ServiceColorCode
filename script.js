@@ -20,21 +20,13 @@ function handleKeyPress(event) {
     if (event.key === 'Enter') {
         const searchTerm = document.getElementById('searchInput').value.toLowerCase();
         const contentItems = document.querySelectorAll('.content-item');
-        const headerHeight = document.querySelector('header').offsetHeight;
 
-        for (const item of contentItems) {
-            const tag = item.getAttribute('data-tag').toLowerCase();
-            if (tag === searchTerm) {
-                const itemPosition = item.getBoundingClientRect().top + window.scrollY - headerHeight - 20;
-                window.scrollTo({
-                    top: itemPosition,
-                    behavior: 'smooth'
-                });
-                return;
-            }
-        }
+        // URLのqueryを更新
+        const newUrl = new URL(window.location);
+        newUrl.searchParams.set('search_query', searchTerm);
+        history.pushState(null, '', newUrl);
 
-        alert('該当するサービスが見つかりませんでした。');
+        scrollToItem(searchTerm, contentItems);
     }
 }
 
@@ -89,3 +81,31 @@ function toggleFlowerMenu() {
         menuContent.style.display = 'none';
     }
 }
+
+function scrollToItem(searchTerm, contentItems) {
+    const lowerSearchTerm = searchTerm.toLowerCase();
+    for (const item of contentItems) {
+        const tag = item.getAttribute('data-tag').toLowerCase();
+        if (tag === lowerSearchTerm) {
+            const headerHeight = document.querySelector('header').offsetHeight;
+            const itemPosition = item.getBoundingClientRect().top + window.scrollY - headerHeight - 20;
+            window.scrollTo({ top: itemPosition, behavior: 'smooth' });
+
+            item.classList.add('flash-border');
+            setTimeout(() => item.classList.remove('flash-border'), 2000);
+
+            return;
+        }
+    }
+
+    alert('該当するサービスが見つかりませんでした。');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchTerm = urlParams.get('search_query');
+    if (searchTerm) {
+        const contentItems = document.querySelectorAll('.content-item');
+        scrollToItem(searchTerm, contentItems);
+    }
+});

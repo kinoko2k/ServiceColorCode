@@ -162,6 +162,24 @@ footer a {
     text-decoration: none;
 }
 
+/* 枠点滅 */
+@keyframes flash-border {
+    0% {
+        border-color: rgba(255, 0, 0, 0);
+    }
+    50% {
+        border-color: rgba(255, 0, 0, 1);
+        border-width: 3px;
+    }
+    100% {
+        border-color: rgba(255, 0, 0, 0);
+    }
+}
+
+.flash-border {
+    animation: flash-border 1s ease-in-out 2;
+}
+
 .notification {
     position: fixed;
     bottom: -50px;
