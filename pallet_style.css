@@ -1,0 +1,274 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    zoom: 120%;
+}
+
+header {
+    background-color: #e49e61;
+    color: white;
+    padding: 10px 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar a {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.search-bar .github-icon,
+.search-bar .twitter-icon {
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.search-bar .github-icon:hover,
+.search-bar .twitter-icon:hover {
+    transform: scale(1.1);
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content-list {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.content-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.color-code-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+}
+
+.color-code {
+    font-size: 12px;
+    color: white;
+    margin: 0 0 5px 0;
+}
+
+.copy-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffcccb;
+    color: #333;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.copy-btn:hover {
+    background-color: #ff9999;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 色パレットのスタイル */
+.palette {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#colorCanvas {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    cursor: crosshair;
+    display: block;
+}
+
+.color-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#colorCode {
+    width: 150px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#copyButton {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffcccb;
+    color: #333;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#copyButton:hover {
+    background-color: #ff9999;
+    transform: scale(1.1);
+}
+
+.flower-menu {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.menu-button {
+    background-color: #EEEEEE;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.menu-button:hover {
+    transform: scale(1.1);
+}
+
+.menu-content {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.menu-content a {
+    background-color: #ffeb3b;
+    color: #333;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 5px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.menu-content a:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search-bar input {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .search-bar a {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .content-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item-details {
+        order: 1;
+        width: 100%;
+    }
+
+    .item-details h1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .item-icon {
+        order: 2;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .color-code-wrapper {
+        order: 3;
+        align-items: flex-start;
+        margin-left: 0;
+    }
+}
