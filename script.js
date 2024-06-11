@@ -23,7 +23,11 @@ function handleKeyPress(event) {
 
         // URLのqueryを更新
         const newUrl = new URL(window.location);
-        newUrl.searchParams.set('search_query', searchTerm);
+        if (searchTerm) {
+            newUrl.searchParams.set('search_query', searchTerm);
+        } else {
+            newUrl.searchParams.delete('search_query');
+        }
         history.pushState(null, '', newUrl);
 
         scrollToItem(searchTerm, contentItems);
