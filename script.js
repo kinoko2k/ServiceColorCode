@@ -34,6 +34,15 @@ function handleKeyPress(event) {
     }
 }
 
+/* 過去作
+        const newUrl = new URL(window.location);
+        newUrl.searchParams.set('search_query', searchTerm);
+        history.pushState(null, '', newUrl);
+
+        scrollToItem(searchTerm, contentItems);
+    }
+}
+*/
 
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Shift') {
