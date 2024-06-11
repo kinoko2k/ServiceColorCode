@@ -80,3 +80,12 @@ document.addEventListener('keyup', function(event) {
         }
     }
 });
+
+function toggleFlowerMenu() {
+    const menuContent = document.querySelector('.menu-content');
+    if (menuContent.style.display === 'none' || menuContent.style.display === '') {
+        menuContent.style.display = 'flex';
+    } else {
+        menuContent.style.display = 'none';
+    }
+}
