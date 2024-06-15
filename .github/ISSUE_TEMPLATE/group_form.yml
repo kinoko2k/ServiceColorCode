@@ -1,0 +1,22 @@
+name: "グループの追加"
+about: グループ名だけをタイトルに入れてください。
+labels: ["enhancement"]
+assignees: kinoko2k
+body:
+  - type: markdown
+    attributes:
+      value: |
+        多分宣伝にはなると思う。
+  - type: textarea
+    id: imageURL
+    attributes:
+      label: グループアイコンの配布先またはURL
+      description: 設定するためにグループアイコンが必要です。
+  - type: textarea
+    id: description
+    attributes:
+      label: グループの説明
+      description: 2文以内にまとめてください。短文でお願いします。
+    validations:
+      required: true
+# .ymlでissues作れるって聞いた。
