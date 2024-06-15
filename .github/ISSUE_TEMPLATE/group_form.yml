@@ -1,7 +1,8 @@
 name: "グループの追加"
-about: グループ名だけをタイトルに入れてください。
+description: グループ名だけをタイトルに入れてください。
 labels: ["enhancement"]
-assignees: kinoko2k
+assignees:
+  - kinoko2k
 body:
   - type: markdown
     attributes:
