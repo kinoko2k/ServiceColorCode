@@ -44,6 +44,7 @@ function handleKeyPress(event) {
 }
 */
 
+/* Shiftを押したらXの表示がTwitterになるコード */
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Shift') {
         const twitterItem = document.querySelector('#x');
@@ -65,6 +66,7 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
+/* Shiftを離したらTwitterの表示がXになるコード */
 document.addEventListener('keyup', function(event) {
     if (event.key === 'Shift') {
         const twitterItem = document.querySelector('#x');
