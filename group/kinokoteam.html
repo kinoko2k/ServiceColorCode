@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property='og:type' content='website'>
+    <meta property='og:title' content="KinokoTeam - GroupList">
+    <meta property='og:url' content='https://kinoko2k.github.io/ServiceColorCode/group/index.html'>
+    <meta property="og:description" content="
+    「KinokoTeam」
+    変なプログラムを作成し続けるグループ
+    所属人数は、4人
+    代表: X@kinoko1216">
+    <meta property="og:image" content="img/Kinoko_2K.png">
+    <meta property="og:profile:username" content="Kinoko_2K">
+    <meta name="twitter:card" content="summary">
+        <title>KinokoTeam - GroupList</title>
+    <meta name="description" content="カラーパレットグループリスト" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="https://kinoko2k.github.io/ServiceColorCode/"><img src="https://avatars.githubusercontent.com/u/65443692?s=48&v=4" alt="アイコン"></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="けんさくらん" onkeypress="handleKeyPress(event)">
+                <a href="https://twitter.com/intent/tweet?text=カラーコードサービスリスト - @kinoko1216%0Ahttps://kinoko2k.github.io/ServiceColorCode/" target="_blank">
+                    <img src="../img/Twitter.svg" alt="Twitter" class="twitter-icon">
+                </a>
+                <a href="https://github.com/kinoko2k/ServiceColorCode" target="_blank">
+                    <img src="../img/GitHub.png" alt="GitHub" class="github-icon">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="content-list">
+            <div class="content-item" style="background: linear-gradient(45deg, #e49e61, #e0d35e, #e49e61);" data-tag="KinokoTeam" id="kinokoteam">
+                <div class="item-icon">
+                    <img src="img/Kinoko_2K.png" alt="service-icon">
+                </div>
+                <div class="item-details">
+                    <h1>KinokoTeam</h1>
+                    <p class="description">これはサービスの説明です。これはサービスの説明です。これはサービスの説明です。これはサービスの説明です。これはサービスの説明です。これはサービスの説明です。これはサービスの説明です。これはサービスの説明です。これはサービスの説明です。これはサービスの説明です。</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024/06/09 <a href="https://github.com/kinoko2k/ServiceColorCode">ServiceColorCode</a><br><a href="https://github.com/kinoko2k/">Dev Kinoko_2K</a><br>※掲載されているサービス・グループはスポンサーシップ、パートナーシップ等に該当しません。掲載されているサービスについては、記載先のURLをご確認ください。</p>
+    </footer>
+    <div id="notification" class="notification"></div>
+    <div class="flower-menu" id="flowerMenu">
+        <div class="menu-button" onclick="toggleFlowerMenu()">❓</div>
+        <div class="menu-content">
+            <a href="../index.html">サービスリスト</a>
+            <a href="#">グループリスト</a>
+            <a href="../pallet.html">色見本</a>
+            <a href="https://github.com/kinoko2k/ServiceColorCode">GitHub</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
