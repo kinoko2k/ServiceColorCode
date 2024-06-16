@@ -1,6 +1,7 @@
 /* style.css */
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -101,7 +102,7 @@ header {
 }
 
 .item-icon img {
-    height: 50px;
+    height: 80px;
     margin-bottom: 10px;
 }
 
@@ -132,6 +133,63 @@ header {
 }
 
 .item-details .description {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.project {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.info {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* https://webliker.info/css/75964/ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+table th {
+    position: relative;
+    text-align: left;
+    width: 30%;
+    padding: 10px;
+    background-color: #d76868;
+    border: 1px solid #ddd;
+}
+
+table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #c57979;
+}
+
+table th:after {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: calc(50% - 1px);
+    right: -15px;
+}
+
+table:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+table th:hover {
+    background-color: #2e9d18;
+}
+
+
+.sns {
     font-size: 16px;
     margin-top: 10px;
 }
@@ -194,10 +252,12 @@ footer a {
     0% {
         border-color: rgba(255, 0, 0, 0);
     }
+
     50% {
         border-color: rgba(255, 0, 0, 1);
         border-width: 3px;
     }
+
     100% {
         border-color: rgba(255, 0, 0, 0);
     }
