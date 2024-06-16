@@ -101,13 +101,35 @@ header {
     flex-direction: column;
 }
 
-.item-details h1 {
+.item-details h1, a {
     margin: 0;
     font-size: 18px;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+}
+
+.item-details a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 1px;
+    right: 0;
+    background: white;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.item-details a:hover::after {
+    width: 100%;
+    left: 0;
+    background: white;
 }
 
 .item-details a {
     color: white;
+    text-decoration: none;
 }
 
 .item-details .description {
