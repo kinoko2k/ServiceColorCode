@@ -4,25 +4,25 @@
 一人ではよくあるサービスを入れるのは困難だから、READMEmdとかに記述方法書いたから、PR出してくれれば、追加します。
 
 ## さーびすりすと
-| サービス名 |
-| --- |
-|Discord|
-|Twitter|
-|Instagram|
-|LINE|
-|Facebook|
-|Amazon|
-|Google|
-|Apple|
-|Android|
-|YouTube|
-|Spotify|
-|BeReal|
-|Telegram|
-|RiotGames|
-|League Of Legends|
-|VALORANT|
-|Microsoft|
+| サービス名 | サイトURL |
+| --- | --- |
+|Discord| [https://discord.com](https://discord.com) |
+|Twitter| [https://twitter.com](https://twitter.com) |
+|Instagram| [https://www.instagram.com](https://www.instagram.com) |
+|LINE| [https://line.me](https://line.me) |
+|Facebook| [https://www.facebook.com](https://www.facebook.com) |
+|Amazon| [https://www.amazon.com](https://www.amazon.com) |
+|Google| [https://www.google.com](https://www.google.com) |
+|Apple| [https://www.apple.com](https://www.apple.com) |
+|Android| [https://www.android.com](https://www.android.com) |
+|YouTube| [https://www.youtube.com](https://www.youtube.com) |
+|Spotify| [https://www.spotify.com](https://www.spotify.com) |
+|BeReal| [https://bere.al](https://bere.al) |
+|Telegram| [https://telegram.org](https://telegram.org) |
+|Riot Games| [https://www.riotgames.com](https://www.riotgames.com) |
+|League of Legends| [https://www.leagueoflegends.com](https://www.leagueoflegends.com) |
+|VALORANT| [https://playvalorant.com](https://playvalorant.com) |
+|Microsoft| [https://www.microsoft.com](https://www.microsoft.com) |
 
 ## サービスの追加について
 ```html

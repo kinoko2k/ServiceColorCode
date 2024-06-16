@@ -1,6 +1,6 @@
 name: "グループの追加"
 description: グループ名だけをタイトルに入れてください。
-labels: ["enhancement"]
+labels: ["enhancement", "documentation"]
 assignees:
   - kinoko2k
 body:
